@@ -1,0 +1,36 @@
+#container5{
+	/* width: 600px; */
+	height: 500px;
+	border: 1px solid grey;
+	background-color: yellow;
+	padding: 2px;
+}
+#col1{
+	width: 100px;
+	float: left;
+}
+#col3{
+	width: 100px;
+	float:right;
+}
+#col2{
+	width: 100px;
+	float: center;
+}
+
+#sectionCenter p{
+	/* display: inline; */
+}
+#container5 p{
+	background-color: #ffffff;
+	margin: 0px;
+	border: 1px solid grey;
+	padding: 10px;
+}
+#sectionCenter p:first-child{
+	float: left;
+}
+#sectionBottom{
+	/* clear: both; */
+	color: red;
+}

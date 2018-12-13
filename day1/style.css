@@ -1,0 +1,46 @@
+body{
+	background-color: #FFFFCC;
+	font-family: Arial;
+	font-style: normal;
+	font-variant: normal
+}
+h1{
+	background-color: #990000;
+	color: #FFFFCC;
+	text-align: center;
+	font-family : "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-style: italic;
+	letter-spacing: 10px;
+	border-bottom: 20px solid #CC0000;
+}
+h3{
+	color: #FFFFCC;
+	background-color: #009900;
+	padding: 2px 10px;
+}
+h4{
+	color : grey;
+}
+a{
+	text-decoration: none;
+	color: purple;
+}
+ul{
+	color : #AD3228;
+	font-style: italic;
+}
+img{
+	background-color: #ffffff;
+	border: 1px dashed grey;
+	padding: 20px 100px 20px 20px;
+}
+table, th, td {
+	border: 1px solid black;
+}
+table{
+	background-color: lightgrey;
+}
+textarea{
+	overflow-y: scroll;
+	resize: none;
+}

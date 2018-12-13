@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sample Web Page</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<script src="./script.js"></script>
+	</head>
+	<body>
+		<h1>My first web page</h1>
+		
+		<h3>What this is</h3>
+		<p>Welcome to my first webpage. I created this webpage without the assistance of a webpage editor. Just my 
+		little text editor and a keen <i><b>UNDERSTANDING OF HTML</b></i></p>
+		
+		<h3>Why this is</h3>
+		<ul>
+			<li>To learn HTML</li>
+			<li>
+				List element
+				<ol>
+					<li>Home</li>
+					<li>FAQ</li>
+					<li>Contact</li>
+					<li>About</li>
+				</ol>
+			</li>
+			<li>About</li>
+		</ul>
+		<h3>ZeusLearning.com</h3>
+		<a href="https://zeuslearning.com" target="_blank">This link will open zeuslearning.com in a new tab</a>
+		<h3>On click of following image navigate to Google.com</h3>
+		<a href="https://www.google.com" target="_blank"><img src="../images/googleLogo.png" alt="google logo" height="70" width="200" /></a>
+		
+		<h4>Some random table</h4>
+		<table>
+			<tr>
+				<td>Row 1, cell 1</td>
+				<td>Row 1, cell 2</td>
+				<td>Row 1, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 2, cell 1</td>
+				<td>Row 2, cell 2</td>
+				<td>Row 2, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 3, cell 1</td>
+				<td>Row 3, cell 2</td>
+				<td>Row 3, cell 3</td>
+			</tr>
+			<tr>
+				<td>Row 4, cell 1</td>
+				<td>Row 4, cell 2</td>
+				<td>Row 4, cell 3</td>
+			</tr>
+		</table>
+		
+		<h4>Some random form</h4>
+		<p><i><b>NOTE:</b></i> It looks the part, but won't do a anything.</p>
+		
+		<form>
+			<label for="userName">Name:</label><br><br>
+			<input type="text" id="userName" placeholder="Your Name" /><br><br>
+			<label for="userComments">Comments:</label><br><br>
+			<textarea id="userComments" rows="10" cols="20" placeholder="Your comments"></textarea><br><br>
+			
+			<p>Are you:</p>
+			<input type="radio" name="gender" id="maleRadio" value="male">
+			<label for="maleRadio">Male</label><br><br>
+			
+			<input type="radio" name="gender" id="femaleRadio" value="female">
+			<label for="femaleRadio">Female</label><br><br>
+			
+			<input type="submit" id="submitButton" value="Submit Query" onclick="return verificationFunction();" />
+		</form>
+	</body>
+</html>

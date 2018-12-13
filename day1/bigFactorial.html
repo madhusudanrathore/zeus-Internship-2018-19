@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Big Factorial</title>
+	</head>
+	<body>
+		<input id="factorial-input-box" type="number" oninput=largeFactorial()>
+		<script>
+			function multiplication(){
+			}
+			
+			function largeFactorial(){
+				var x = document.getElementById("factorial-input-box").value;
+				var num = parseInt(x);
+				var i;
+				for( i=0; i<num; ++i){
+					multiplication(num);
+				}
+				
+				var t1=[1,2,3], t2=[1,2,3];
+				// console.log(t1[0]+t2[0]);
+				// window.alert("factorial is " + numLength);
+			}
+		</script>
+	</body>
+</html>

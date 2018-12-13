@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Form Elements</title>
+		<style>
+			.skillsContainer{
+				width: 150px;
+				border: 1px solid black;
+			}
+			.skillsSelectBox{
+				position: relative;
+			}
+			.skillsSelectBox select{
+				width: 100%;
+			}
+			.overSelect{
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+			}
+			#checkboxes{
+				height: 80px;
+				overflow-y: scroll;
+				display: none;
+			}
+			#checkboxes label{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+
+        <!-- task a -->
+        <label for="userName">Name</label>
+        <input type="text" id="userName" maxlength="32" /><br><br>
+
+        <!-- task b -->
+        <label for="userAddress">Address</label>
+        <input type="text" id="userAddress" /><br><br>
+
+        <!-- task c -->
+        <label for="userPassword">Password</label>
+        <input type="password" id="userPassword" /><br><br>
+
+        <!-- task d -->
+        <input type="hidden" id="myEmail" value="rmadhusudan098@gmail.com" /><br>
+
+        <!-- task e -->
+        <input type="hidden" id="myName" value="Madhu Sudan Rathore" /><br>
+
+        <!-- task f -->
+		<textarea readonly>C-1, Sabarmati Ashram Gaushala Quarters, Near Gandhi Ashram, Ashram Road, Ahmedabad-380027</textarea><br><br>
+
+		<!-- task g -->
+		<span><b>Hobbies:</b></span>
+		<input type="checkbox" name="hobbies" value="reading">Reading
+		<input type="checkbox" name="hobbies" value="football">Football
+		<input type="checkbox" name="hobbies" value="cricket">Cricket
+		<input type="checkbox" name="hobbies" value="cooking">Cooking<br><br>
+
+		<!-- task h -->
+		<label for="education">Education:</label>
+		<select id="education">
+			<option value="12">12</option>
+			<option value="graduate">Graduate</option>
+			<option value="postGraduate">Post Graduate</option>
+		</select>
+		<br><br>
+
+		<!-- task i -->
+		<div class="skillsContainer">
+			<div class="skillsSelectBox" onclick="showCheckboxes()">
+				<select>
+					<option>Skills</option>
+				</select>
+				<div class="overSelect"></div>
+			</div>
+			<div id="checkboxes">
+				<input type="checkbox" value="javascript" />Javascript<br>
+				<input type="checkbox" value="c" />C<br>
+				<input type="checkbox" value="cpp" />CPP<br>
+				<input type="checkbox" value="dotnet" />.NET<br>
+				<input type="checkbox" value="java" />Java<br>
+				<input type="checkbox" value="html" />HTML<br>
+				<input type="checkbox" value="css" />CSS<br>
+			</div>
+		</div>
+
+		<script>
+			var expanded=false;			
+			function showCheckboxes(){
+			  var checkboxes=document.getElementById("checkboxes");
+			  if (!expanded){
+				checkboxes.style.display="block";
+				expanded=true;
+			 }else{
+				checkboxes.style.display="none";
+				expanded=false;
+			  }
+			}
+		</script>
+
+	</body>
+</html>
