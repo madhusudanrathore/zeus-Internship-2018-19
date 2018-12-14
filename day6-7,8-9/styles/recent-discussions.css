@@ -3,6 +3,7 @@
   border: 2px solid #A466E4;
   border-radius: 4px;
   width: 420px;
+  height: 780px;
   background-color: #F8F4FD;
   margin: 100px 0px 100px 100px;
 }
@@ -41,7 +42,7 @@
   margin: 0;
   padding: 10px 0px;
 }
-.recent-discussion > a{ /* immediate child */
+.more-btn{ /* immediate child */
   color: #a7aab7;
-  margin: 0px 0px 5px 370px;
+  margin: 0px 0px 0px 370px;
 }

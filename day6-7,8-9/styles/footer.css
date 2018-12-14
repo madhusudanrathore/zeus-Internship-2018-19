@@ -2,7 +2,7 @@
 footer{
   width:100%;
   color: #ffffff;
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 50px 0px;/* to prevent overlapping of sticky footer with topfunda footer */
   background-color: #343D42;
 }
 footer a{
@@ -15,16 +15,19 @@ footer a:hover{
 .footer-content-menu p{
   font-weight: bold;
 }
+.footer-content-menu{
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;/* distributing row in 5 columns */
+}
 .footer-content-menu > li{
   display: inline-block;
-  vertical-align:top;/* makes elements with multiple "li" in same line */
   list-style-type: none;
-  letter-spacing: 3px;
-  margin: 0px 10px;
+  letter-spacing: 2px;
 }
 .footer-content-submenu > li {
   list-style-type: none;
   padding: 2px;
+  margin-left: -40px;
 }
 .footer-content-submenu > li::before {
   content: "\00BB";
