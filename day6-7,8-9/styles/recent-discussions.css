@@ -1,0 +1,47 @@
+/* recent discussions */
+.recent-discussion{
+  border: 2px solid #A466E4;
+  border-radius: 4px;
+  width: 420px;
+  background-color: #F8F4FD;
+  margin: 100px 0px 100px 100px;
+}
+.recent-discussion > div > p{
+  background-color: #A466E4;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px 0px 10px 10px;
+}
+.recent-discussion > ul > li{
+  list-style-type: none;
+  margin-left: -30px;
+  padding: 10px 0px;
+  color: #BBB1BC;/*BBB1BC*/
+}
+.recent-discussion > ul > li > a{
+  color: #a7aab7;
+}
+.recent-discussion > ul > li > p{
+  margin: 0px 0px 0px 20px;
+  font-size: 15px;
+}
+.recent-discussion > ul > li > p > a{
+  color: #a7aab7;
+}
+.recent-discussion > ul > li::before {
+  content: "\2022";
+  color: #A466E4;
+  font-weight: bold;
+  display: inline-block;
+}
+.recent-discussion > div{
+  background-image: linear-gradient(to bottom right, #E2CFF6, #BD8DFF);
+  margin: 0;
+  padding: 10px 0px;
+}
+.recent-discussion > a{ /* immediate child */
+  color: #a7aab7;
+  margin: 0px 0px 5px 370px;
+}

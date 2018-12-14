@@ -1,0 +1,16 @@
+/* navbar */
+.navbar{
+  margin-bottom: 30px;
+  background-color: #233036;
+  height: 74px;
+}
+.navbar a{
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 2px;
+  border-right: 1px solid #ffffff;
+  margin: 0px 10px;
+}
+.navbar a:last-child{
+  border-right: none;
+}

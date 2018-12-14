@@ -1,0 +1,83 @@
+/* footer */
+footer{
+  width:100%;
+  color: #ffffff;
+  margin: 0px 0px 50px 0px;
+  background-color: #343D42;
+}
+footer a{
+  text-decoration: none;
+  color: #ffffff;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+.footer-content-menu p{
+  font-weight: bold;
+}
+.footer-content-menu > li{
+  display: inline-block;
+  vertical-align:top;/* makes elements with multiple "li" in same line */
+  list-style-type: none;
+  letter-spacing: 3px;
+  margin: 0px 10px;
+}
+.footer-content-submenu > li {
+  list-style-type: none;
+  padding: 2px;
+}
+.footer-content-submenu > li::before {
+  content: "\00BB";
+  display: inline-block;
+}
+.footer-menu{
+  text-align: center;
+  padding: 20px 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.footer-menu > li{
+  list-style-type: none;
+  padding: 0px 20px;
+  display: inline-block;  
+  border-right:1px solid #ffffff;
+}
+.footer-menu > li:last-child{
+  border-right: none;
+  margin: 0px 0px 0px -20px;
+  padding: 0px;
+}
+.social-links > ul > li{
+  list-style-type: none;
+  padding: 0px 2.5px;
+  display: inline;
+}
+.circle{
+    border-radius: 50%;
+    margin:3px;
+    font-size: 3px;
+}
+.fa-facebook{
+    background: #3B5998;
+    color: #FFFFFF;
+  padding: 10px 14px 10px 13px;
+}
+.fa-twitter{
+    background: #4099FF;
+    color: #FFFFFF;
+  padding: 8px;
+}
+.fa-google-plus{
+  color: #FFFFFF;
+  background: #dd4b39;
+  padding: 8px;
+}
+.fa-instagram{
+  background: #e03566;
+  color: #ffffff;
+  padding: 8px;
+}
+.footer-copyright{
+  text-align: center;
+  padding-bottom: 5px;
+}
