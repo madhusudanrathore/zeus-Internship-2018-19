@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<script src="./script.js"></script>
+		<title>Day 11-12</title>
+	</head>
+	<body>
+
+		<!-- Task 1.b -->
+		<h1>Add Employee</h1>
+		
+		<!-- Task 2 -->
+		<form>
+			<table>
+				<tr>
+					<td>First Name</td>
+					<td><input type="text" id="userFirstName" autofocus /></td>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td><input type="text" id="userLastName" /></td>
+				</tr>
+				<tr>
+					<td>Gender</td>
+					<td>
+						<input type="radio" name="gender" id="maleRadio" value="male"><label for="maleRadio">Male</label>
+						<input type="radio" name="gender" id="femaleRadio" value="female"><label for="femaleRadio">Female</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Hobbies:</td>
+					<td>
+						<input type="checkbox" name="hobbies" value="reading">Reading<br>
+						<input type="checkbox" name="hobbies" value="football">Singing<br>
+						<input type="checkbox" name="hobbies" value="cricket">Dancing<br>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="education">Education:</label></td>
+					<td>
+						<select id="education">
+							<option value="masters">Masters</option>
+							<option value="bachelors">Bachelors</option>
+							<option value="highSchool">High School</option>
+							<option value="noneOfThese">None of these</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Skillset</td>
+					<td>
+						<select id="skillset" multiple>
+							<option value="c++">C++</option>
+							<option value="java">Java</option>
+							<option value="html">HTML</option>
+							<option value="cHash">C#</option>
+							<option value="dotNet">.NET</option>
+						</select>
+					</td>
+				<tr>
+					<td>Maritial Status</td>
+					<td>
+						<input type="radio" name="maritial status" id="marriedRadio" value="married" onclick="maritialStatus(this)"><label for="marriedRadio">Married</label>
+						<input type="radio" name="maritial status" id="nonMarriedRadio" value="nonmarried" onclick="maritialStatus(this)"><label for="nonMarriedRadio">Non Married</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Name of Spouse</td>
+					<td><input type="text" id="nameOfSpouse" /></td>
+				</tr>
+				<tr>
+					<td>Other Details</td>
+					<td><textarea id="otherDetails"></textarea></td>
+				</tr>
+				<tr>
+					<td><input type="reset" value="RESET" onclick="resetForm()" /></td>
+					<td><input type="reset" value="SAVE" onclick="return onSubmit();" /></td>
+				</tr>
+			</table>
+		</form>
+
+	</body>
+</html>

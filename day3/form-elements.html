@@ -4,33 +4,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Form Elements</title>
-		<style>
-			.skillsContainer{
-				width: 150px;
-				border: 1px solid black;
-			}
-			.skillsSelectBox{
-				position: relative;
-			}
-			.skillsSelectBox select{
-				width: 100%;
-			}
-			.overSelect{
-				position: absolute;
-				left: 0;
-				right: 0;
-				top: 0;
-				bottom: 0;
-			}
-			#checkboxes{
-				height: 80px;
-				overflow-y: scroll;
-				display: none;
-			}
-			#checkboxes label{
-				display: block;
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+		<script src="./script.js"></script>
 	</head>
 	<body>
 
@@ -72,37 +47,15 @@
 		<br><br>
 
 		<!-- task i -->
-		<div class="skillsContainer">
-			<div class="skillsSelectBox" onclick="showCheckboxes()">
-				<select>
-					<option>Skills</option>
-				</select>
-				<div class="overSelect"></div>
-			</div>
-			<div id="checkboxes">
-				<input type="checkbox" value="javascript" />Javascript<br>
-				<input type="checkbox" value="c" />C<br>
-				<input type="checkbox" value="cpp" />CPP<br>
-				<input type="checkbox" value="dotnet" />.NET<br>
-				<input type="checkbox" value="java" />Java<br>
-				<input type="checkbox" value="html" />HTML<br>
-				<input type="checkbox" value="css" />CSS<br>
-			</div>
-		</div>
-
-		<script>
-			var expanded=false;			
-			function showCheckboxes(){
-			  var checkboxes=document.getElementById("checkboxes");
-			  if (!expanded){
-				checkboxes.style.display="block";
-				expanded=true;
-			 }else{
-				checkboxes.style.display="none";
-				expanded=false;
-			  }
-			}
-		</script>
+		<label for="skillset">Skills:</label><br>
+		<select name="skillset" multiple>
+			<option value="c">C</option>
+			<option value="cpp">CPP</option>
+			<option value="dotNet">.NET</option>
+			<option value="java">Java</option>
+			<option value="html">HTML</option>
+			<option value="css">CSS</option>				
+		</select>
 
 	</body>
 </html>

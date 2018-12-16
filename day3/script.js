@@ -1,3 +1,14 @@
+var expanded=false;			
+function showCheckboxes(){
+  var checkboxes=document.getElementById("checkboxes");
+  if (!expanded){
+	checkboxes.style.display="block";
+	expanded=true;
+ }else{
+	checkboxes.style.display="none";
+	expanded=false;
+  }
+}
 function verificationFunction(){
 	var name = document.getElementById("userName");
 	var comments = document.getElementById("userComments");

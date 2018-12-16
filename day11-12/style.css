@@ -1,0 +1,13 @@
+table, td {
+	border: 1px solid black;
+}
+#otherDetails{
+	overflow-y: scroll;
+}
+table tr:last-child{
+	text-align: center;
+}
+textarea{
+	resize: none;
+	overflow-y: scroll;
+}
