@@ -1,31 +1,41 @@
 var idArray=["pricing","tests","resources"];
+var arrayLength = idArray.length;
 var currentDropdown="";
 
-function hideShowDropdown( received ){
-    // hide other dropdowns
+function hideDropdowns(){
+    // get dropdowns as an array
     var elements=document.getElementsByClassName("dropdown");
-    elements[0].style.display="none";
-    elements[1].style.display="none";
-    elements[2].style.display="none";
-    
-    // show currently clicked dropdown
-    var targetDropdown=document.getElementById( received.id + "-dropdown");
-    console.log(targetDropdown);
+    for (var i=0; i<arrayLength; ++i){
+        elements[i].style.display="none";
+    }
+    currentDropdown="";
+}
+function showDropdown(targetId){
+    var targetDropdown=document.getElementById( targetId + "-dropdown");
+    targetDropdown.style.display="block";
+    currentDropdown=targetId;
+}
+function toggleDropdown(received){
     if( currentDropdown === "" ){
-        targetDropdown.style.display="block";
-        currentDropdown=received.id + "-dropdown";
+        // no open dropdown
+        // open clicked dropdown
+        showDropdown(received.id);
+    }else if( currentDropdown == received.id ){
+        // currently open dropdown clicked again
+        // close it
+        hideDropdowns();
     }else{
-        targetDropdown.style.display="none";
-        currentDropdown="";
+        // some dropdown already open
+        // hide them and open currently clicked
+        hideDropdowns();
+        showDropdown(received.id);
     }
 }
-
-window.onclick = function(e) {
+/* called when clicked anywhere outside dropdown links */
+window.onclick=function(e){
     if( idArray.indexOf(e.target.id) === -1 ){
-        var elements=document.getElementsByClassName("dropdown");
-        elements[0].style.display="none";
-        elements[1].style.display="none";
-        elements[2].style.display="none";
-        currentDropdown="";
+        // if click is anywhere outside of dropdown links
+        // hide dropdowns
+        hideDropdowns();
     }
  }

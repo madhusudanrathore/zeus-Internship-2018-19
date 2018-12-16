@@ -38,7 +38,7 @@
   display: inline-block;
 }
 .recent-discussion > div{
-  background-image: linear-gradient(to bottom right, #E2CFF6, #BD8DFF);
+  background-image: linear-gradient(#E2CFF6, #BD8DFF);
   margin: 0;
   padding: 10px 0px;
 }

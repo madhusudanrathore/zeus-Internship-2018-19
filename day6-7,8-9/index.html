@@ -19,17 +19,17 @@
 
         <!-- day 6-7, task 2 -->
         <div class="navbar">
-            <img id="logo" src="./images/testfunda-logo.png"/>
+            <img id="logo" src="../images/testfunda-logo.png"/>
             <ul class="left-section">
                 <li>
-                    <a class="dropdown-btn" id="pricing" href="#" onclick="hideShowDropdown(this)">PRICING &or;</a>
+                    <a class="dropdown-btn" id="pricing" href="#/pricing" onclick="toggleDropdown(this)">PRICING &or;</a>
                     <ul class="dropdown" id="pricing-dropdown">
                         <li><a href="#">MBA 2018-19</a></li>
                         <li><a href="#">BANK 2018</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a class="dropdown-btn" id="tests" href="#" onclick="hideShowDropdown(this)">FREE TESTS &or;</a>
+                    <a class="dropdown-btn" id="tests" href="#/tests" onclick="toggleDropdown(this)">FREE TESTS &or;</a>
                     <ul class="dropdown" id="tests-dropdown">
                         <li><a href="#">MBA 2018-19</a></li>
                         <li><a href="#">BANK 2017</a></li>
@@ -37,7 +37,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="dropdown-btn" id="resources" href="#" onclick="hideShowDropdown(this)">FREE RESOURCES &or;</a>
+                    <a class="dropdown-btn" id="resources" href="#/resources" onclick="toggleDropdown(this)">FREE RESOURCES &or;</a>
                     <ul class="dropdown" id="resources-dropdown">
                         <li><a href="#">Exam Info</a></li>
                         <li><a href="#">Exam Calender</a></li>
@@ -51,9 +51,9 @@
                 </li>
             </ul>
             <ul class="right-section">
-                <li><i class="fa fa-phone" aria-hidden="true"></i> +91 99 3000 5544</li>
-                <li id="login-btn"><a href="#">LOGIN</a></li>
-                <li id="signup-btn"><a href="#">SIGNUP</a></li>
+                <li class="nav-contact-number"><i class="fa fa-phone" aria-hidden="true"></i> +91 99 3000 5544</li>
+                <li id="login-btn"><a href="#/login">LOGIN</a></li>
+                <li id="signup-btn"><a href="#/signup">SIGNUP</a></li>
             </ul>
         </div>
 

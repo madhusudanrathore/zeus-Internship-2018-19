@@ -12,7 +12,6 @@
 .announcements > .card {
   background-color: #FEFF99;
   box-shadow: 5px 5px 20px;
-  z-index: 99;
   width: 300px;
   position: relative;
   left: 10px;

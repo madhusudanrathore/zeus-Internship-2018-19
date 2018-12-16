@@ -1,10 +1,11 @@
 /* navbar */
 .navbar{
-  margin-bottom: 300px;
+  margin-bottom: 100px;
   background-color: #233036;
   height: 54px;
   padding: 10px 10px;
-  font-size: 15px;  
+  font-size: 14px;
+  font-family (stack): "Source Sans Pro", sans-serif;
 }
 #logo{
   float:left;
@@ -69,6 +70,7 @@
 }
 .dropdown > li:hover{
   background-color: #59A4BC;
+  color: #ffffff;
 }
 #pricing-dropdown, #tests-dropdown, #resources-dropdown, {
   display:none;
@@ -77,7 +79,7 @@
   #logo{
     margin-left: 0px;
   }
-  .fa-phone{
+  .nav-contact-number{
     display: none;
   }
   .navbar > .right-section{
