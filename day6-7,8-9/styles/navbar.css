@@ -5,11 +5,11 @@
   height: 54px;
   padding: 10px 10px;
   font-size: 14px;
-  font-family (stack): "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 #logo{
   float:left;
-  margin-left: 256px;
+  margin: 0px 0px 0px 256px;
   border-right:1px solid grey;
 }
 .navbar > ul > li{
@@ -20,12 +20,14 @@
 }
 .navbar > .left-section{
   float: left;
+  margin-left: -30px;
 }
 .navbar > .left-section > li:not(:last-child){
   border-right:1px solid #ffffff;
 }
-.navbar > ul > li > a{
+.navbar > ul > li > a, .nav-contact-number{
   color: #ffffff;
+  font-size: 16.5px;
   text-decoration: none;
 }
 .navbar > .right-section{
@@ -57,19 +59,18 @@
 .dropdown > li{
   list-style-type: none;
   border-bottom: 1px solid grey;
-  padding: 10px 0px;
+  padding: 10px 10px;
 }
 .dropdown > li > a{
   text-decoration: none;
   color: black;
-  font-size: 12px;
+  font-size: 14px;
   padding: 10px;
-}
-.dropdown > li > a:hover{
-  color: #ffffff;
 }
 .dropdown > li:hover{
   background-color: #59A4BC;
+}
+.dropdown > li > a:hover{
   color: #ffffff;
 }
 #pricing-dropdown, #tests-dropdown, #resources-dropdown, {

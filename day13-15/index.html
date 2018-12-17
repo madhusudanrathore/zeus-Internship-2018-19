@@ -5,14 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="./style.css">
 		<script src="./script.js"></script>
-		<title>Day 11-12</title>
+		<title>Day 13-15</title>
 	</head>
 	<body>
 
-		<!-- Task 1.b -->
-		<h1>Add Employee</h1>
-		
-		<!-- Task 2 -->
 		<form>
 			<table>
 				<tr>
@@ -63,13 +59,25 @@
 				<tr>
 					<td>Maritial Status</td>
 					<td>
-						<input type="radio" name="maritial status" id="marriedRadio" value="married" onclick="maritialStatus(this)"><label for="marriedRadio">Married</label>
-						<input type="radio" name="maritial status" id="nonMarriedRadio" value="nonmarried" onclick="maritialStatus(this)"><label for="nonMarriedRadio">Non Married</label>
+						<input type="radio" name="maritial status" id="married-radio" value="married" onclick="maritialStatus(this)"><label for="married-radio">Married</label>
+						<input type="radio" name="maritial status" id="non-married-radio" value="nonmarried" onclick="maritialStatus(this)"><label for="non-married-radio">Non Married</label>
 					</td>
 				</tr>
 				<tr>
 					<td>Name of Spouse</td>
 					<td><input type="text" id="name-of-spouse" /></td>
+				</tr>
+				<tr>
+					<td>Date of Birth!</td>
+					<td>
+						<input type="text" id="date-of-birth" placeholder="dd/mm/yyyy" />
+					</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>
+						<input type="email" id="user-email" />
+					</td>
 				</tr>
 				<tr>
 					<td>Other Details</td>

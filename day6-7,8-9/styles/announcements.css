@@ -9,13 +9,24 @@
   height: 60px;
   width: 320px;
 }
+#stripes{
+  width: 320px;
+  height: 210px;
+  margin: 0;
+  background-color: #fff;
+  background-repeat: repeat-y;
+  background-size: 100% 100%;
+  background-position: 0% 0%;
+  background-image: repeating-linear-gradient(-45deg, #fff, #fff 3px, #D3D3D3 3px, #D3D3D3 4px); /* background stripes */
+  animation: barberpole 4s linear infinite;
+}
 .announcements > .card {
   background-color: #FEFF99;
   box-shadow: 5px 5px 20px;
   width: 300px;
   position: relative;
-  left: 10px;
-  top: -75px;
+  left: 7px;
+  top: -285px;
 }
 .announcements > .card > p{
   color: #FF8B5C;
