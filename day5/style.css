@@ -59,8 +59,9 @@
 }
 
 #container5{
-	/* width: 600px; */
+	width: 600px;
 	height: 500px;
+	margin-top: 100px;
 	border: 1px solid grey;
 	background-color: yellow;
 	padding: 2px;
@@ -79,7 +80,7 @@
 }
 
 #sectionCenter p{
-	/* display: inline; */
+	display: inline;
 }
 #container5 p{
 	background-color: #ffffff;
@@ -91,6 +92,6 @@
 	float: left;
 }
 #sectionBottom{
-	/* clear: both; */
+	clear: both; 
 	color: red;
 }
