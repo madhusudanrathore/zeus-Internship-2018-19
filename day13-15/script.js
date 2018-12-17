@@ -28,7 +28,6 @@ function dobValidation( dob ){
 	}
 }
 function emailValidation( email ){
-	console.log( email );
 	// followed by .(dot)
 	// followed by 2-3 characters
 	// No other special characters allowed
@@ -68,39 +67,46 @@ function onSubmit(){
 	var userEmail=document.getElementById("user-email");
 	var userEmailMessage=emailValidation( userEmail.value );
 
+	var otherDetails=document.getElementById("other-details").value;
+
 	if( userFirstName.value === "" ){
 		alert("Please enter a First Name");
 		userFirstName.focus();
-	}else if( userFirstName.value.indexOf(' ')>=0 ){
-		alert("First name has whitespace");
-		userFirstName.focus();
-	}else if( userLastName.value === "" ){
-		alert("Please enter a Last Name");
-		userLastName.focus();
-	}else if( userLastName.value.indexOf(' ')>=0 ){
-		alert("Last name has whitespace");
-		userLastName.focus();
-	}else if( genderMale===false && genderFemale===false ){
-		alert("Please select a gender");
-	}else if( hobbies.length === 0 ){
-		alert("Please select at least one hobby");
-	}else if( skills === ""  ){
-		alert("Please select a skill");
-	}else if( maritialStatusMarried === true && nameOfSpouse.value==="" ){
-		alert("Please enter a Spouse name");
-		nameOfSpouse.focus();
-	}else if( maritialStatusMarried === true && nameOfSpouse.value.indexOf(' ')>=0 ){
-		alert("Spouse name has whitespace");
-		nameOfSpouse.focus();
-	}else 
-	if( ( dateOfBirthMessage !== "" ) ){
-		alert( dateOfBirthMessage );
-		dateOfBirth.focus();
-	}else if( ( userEmailMessage !== "" ) ){
-		alert( userEmailMessage );
-		userEmail.focus();
+	// }else if( userFirstName.value.indexOf(' ')>=0 ){
+	// 	alert("First name has whitespace");
+	// 	userFirstName.focus();
+	// }else if( userLastName.value === "" ){
+	// 	alert("Please enter a Last Name");
+	// 	userLastName.focus();
+	// }else if( userLastName.value.indexOf(' ')>=0 ){
+	// 	alert("Last name has whitespace");
+	// 	userLastName.focus();
+	// }else if( genderMale===false && genderFemale===false ){
+	// 	alert("Please select a gender");
+	// }else if( hobbies.length === 0 ){
+	// 	alert("Please select at least one hobby");
+	// }else if( skills === ""  ){
+	// 	alert("Please select a skill");
+	// }else if( maritialStatusMarried === true && nameOfSpouse.value==="" ){
+	// 	alert("Please enter a Spouse name");
+	// 	nameOfSpouse.focus();
+	// }else if( maritialStatusMarried === true && nameOfSpouse.value.indexOf(' ')>=0 ){
+	// 	alert("Spouse name has whitespace");
+	// 	nameOfSpouse.focus();
+	// }else if( ( dateOfBirthMessage !== "" ) ){
+	// 	alert( dateOfBirthMessage );
+	// 	dateOfBirth.focus();
+	// }else if( ( userEmailMessage !== "" ) ){
+	// 	alert( userEmailMessage );
+	// 	userEmail.focus();
+	// }
 	}else{
 		alert("Thank You");
+		if( genderMale ){
+			addData( userFirstName.value, userLastName.value, "Male", otherDetails );
+		}else{
+			addData( userFirstName.value, userLastName.value, "Female", otherDetails );
+		}
 		return true;
 	}
 	return false;

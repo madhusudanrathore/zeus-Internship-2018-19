@@ -11,3 +11,6 @@ textarea{
 	resize: none;
 	overflow-y: scroll;
 }
+#table-view{
+	display: none;
+}
