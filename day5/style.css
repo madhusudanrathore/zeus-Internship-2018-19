@@ -1,3 +1,63 @@
+#containerOne{
+	width: 260px;
+	background-color: #453A46;
+}
+#containerOne .right-1{
+	float: right;
+	background-color: red;
+	width: 200px;
+	height: 90px;
+	margin: 2.5px;
+}
+#containerOne .left-1{
+	float: left;
+	background-color: yellow;
+	width: 50px;
+	height: 30px;
+	margin: 2.5px 2.5px 5px;
+}
+#containerOne .left-2{
+	float: left;
+	clear: left;
+	background-color: yellow;
+	width: 50px;
+	height: 50px;
+	margin: 5px 2.5px 2.5px;
+}
+#containerTwo{
+	width: 260px;
+	clear: both;
+	margin: 0px;
+	background-color: blue;
+}
+#containerTwo .left{
+	float: left;
+	background-color: blue;
+	margin: 2.5px;
+	width: 50px;
+}
+#containerTwo .center{
+	float: left;
+	background-color: yellow;
+	margin: 2.5px;
+	width: 180px;
+}
+#containerTwo .right{
+	float: right;
+	background-color: yellow;
+	margin: 0px;
+}
+#containerTwo .top{
+	background-color: yellow;
+	margin: 2.5px 2.5px 5px;
+	width: 15px;
+}
+#containerTwo .bottom{
+	background-color: green;
+	margin: 5px 2.5px 2.5px;
+	width: 15px;
+}
+
 #container5{
 	/* width: 600px; */
 	height: 500px;

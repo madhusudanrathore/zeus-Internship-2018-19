@@ -1,0 +1,35 @@
+table, td {
+	border: 1px solid black;
+}
+#otherDetails{
+	overflow-y: scroll;
+}
+#task1-table tr:last-child{
+	text-align: center;
+}
+textarea{
+	resize: none;
+	overflow-y: scroll;
+}
+
+#table-view{
+	display: none;
+	margin: 0px;
+	background-color: #ACA78F;
+}
+#table-view td{
+	border: none;
+	margin: 0px;
+	padding: 5px;
+	width: 100px;
+}
+#table-view tr:nth-child(odd){
+	background-color: #EBF1DE;
+}
+#table-view tr:nth-child(even){
+	background-color: #D7E4BD;
+}
+#table-view tr:first-child{
+	background-color: #C4BD97;
+	color: #000000;
+}
