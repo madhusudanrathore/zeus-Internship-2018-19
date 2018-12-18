@@ -5,24 +5,82 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="./style.css">
 		<script type="text/javascript" src="./run-animation.js"></script>
+		<script type="text/javascript" src="./lap-animation.js"></script>
 		<title>Day 20</title>
 	</head>
 	<body>
 
 		<div id="container">
 			<div id="runner-track">
-				<img src="../images/runner.png" width="10" height="20" id="runner-progress" />
+				<img src="../images/runner.png" width="10" height="20" id="runner-progress-1" /><br>
+				<img src="../images/runner.png" width="10" height="20" id="runner-progress-2" /><br>
+				<img src="../images/runner.png" width="10" height="20" id="runner-progress-3" /><br>
+				<img src="../images/runner.png" width="10" height="20" id="runner-progress-4" /><br>
 			</div>
 			<button onclick="animateRunning()">Start</button>
 		</div>
-		<table id="information-table">
+		<table id="player-information-container">
 			<tr>
-				<td>Time (t)</td>
-				<td>Distance (d)</td>
-			</tr>
-			<tr>
-				<td>0</td>
-				<td>0</td>
+				<td>
+					<table id="information-table-player1">
+						<tr class="table-runner-heading">
+							<td colspan="2">Runner 1</td>
+						</tr>
+						<tr>
+							<td>Time (t)</td>
+							<td>Distance (d)</td>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table id="information-table-player2">
+						<tr class="table-runner-heading">
+							<td colspan="2">Runner 2</td>
+						</tr>
+						<tr>
+							<td>Time (t)</td>
+							<td>Distance (d)</td>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table id="information-table-player3">
+						<tr class="table-runner-heading">
+							<td colspan="2">Runner 3</td>
+						</tr>
+						<tr>
+							<td>Time (t)</td>
+							<td>Distance (d)</td>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table id="information-table-player4">
+						<tr class="table-runner-heading">
+							<td colspan="2">Runner 4</td>
+						</tr>
+						<tr>
+							<td>Time (t)</td>
+							<td>Distance (d)</td>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</td>
 			</tr>
 		</table>
 

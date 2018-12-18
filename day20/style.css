@@ -10,10 +10,11 @@
     height: 100px;
     background-color: #ffffff;
 }
-#runner-progress{
-    margin-top: 80px;
+.table-runner-heading{
+    text-align: center;
 }
 /* #DDDDDD */
-table td {
+#player-information-container table, #player-information-container table td {
     border: 1px solid black;
+    margin: -2px;
 }
