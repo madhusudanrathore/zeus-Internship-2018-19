@@ -1,4 +1,7 @@
 function resetForm(){
+	var errorSection=document.getElementById("error-messages");
+	errorSection.innerHTML='';
+	
 	var userFirstName=document.getElementById("user-first-name");
 	userFirstName.focus();
 }
@@ -28,10 +31,6 @@ function dobValidation( dob ){
 	}
 }
 function emailValidation( email ){
-	// followed by .(dot)
-	// followed by 2-3 characters
-	// No other special characters allowed
-	
 	if( email === ""  ){
 		return "Please enter a Email";
 	}else if( email[0].search( /[0-9]/i ) !== -1 ){
@@ -51,6 +50,10 @@ function emailValidation( email ){
 	}
 }
 function onSubmit(){
+	var errorSection=document.getElementById("error-messages");
+	errorSection.innerHTML='';
+	var errorString='';
+
 	var userFirstName=document.getElementById("user-first-name");
 	var userLastName=document.getElementById("user-last-name");
 	var nameOfSpouse=document.getElementById("name-of-spouse");
@@ -72,34 +75,33 @@ function onSubmit(){
 	if( userFirstName.value === "" ){
 		alert("Please enter a First Name");
 		userFirstName.focus();
-	// }else if( userFirstName.value.indexOf(' ')>=0 ){
-	// 	alert("First name has whitespace");
-	// 	userFirstName.focus();
-	// }else if( userLastName.value === "" ){
-	// 	alert("Please enter a Last Name");
-	// 	userLastName.focus();
-	// }else if( userLastName.value.indexOf(' ')>=0 ){
-	// 	alert("Last name has whitespace");
-	// 	userLastName.focus();
-	// }else if( genderMale===false && genderFemale===false ){
-	// 	alert("Please select a gender");
-	// }else if( hobbies.length === 0 ){
-	// 	alert("Please select at least one hobby");
-	// }else if( skills === ""  ){
-	// 	alert("Please select a skill");
-	// }else if( maritialStatusMarried === true && nameOfSpouse.value==="" ){
-	// 	alert("Please enter a Spouse name");
-	// 	nameOfSpouse.focus();
-	// }else if( maritialStatusMarried === true && nameOfSpouse.value.indexOf(' ')>=0 ){
-	// 	alert("Spouse name has whitespace");
-	// 	nameOfSpouse.focus();
-	// }else if( ( dateOfBirthMessage !== "" ) ){
-	// 	alert( dateOfBirthMessage );
-	// 	dateOfBirth.focus();
-	// }else if( ( userEmailMessage !== "" ) ){
-	// 	alert( userEmailMessage );
-	// 	userEmail.focus();
-	// }
+	}else if( userFirstName.value.indexOf(' ')>=0 ){
+		alert("First name has whitespace");
+		userFirstName.focus();
+	}else if( userLastName.value === "" ){
+		alert("Please enter a Last Name");
+		userLastName.focus();
+	}else if( userLastName.value.indexOf(' ')>=0 ){
+		alert("Last name has whitespace");
+		userLastName.focus();
+	}else if( genderMale===false && genderFemale===false ){
+		alert("Please select a gender");
+	}else if( hobbies.length === 0 ){
+		alert("Please select at least one hobby");
+	}else if( skills === ""  ){
+		alert("Please select a skill");
+	}else if( maritialStatusMarried === true && nameOfSpouse.value==="" ){
+		alert("Please enter a Spouse name");
+		nameOfSpouse.focus();
+	}else if( maritialStatusMarried === true && nameOfSpouse.value.indexOf(' ')>=0 ){
+		alert("Spouse name has whitespace");
+		nameOfSpouse.focus();
+	}else if( ( dateOfBirthMessage !== "" ) ){
+		alert( dateOfBirthMessage );
+		dateOfBirth.focus();
+	}else if( ( userEmailMessage !== "" ) ){
+		alert( userEmailMessage );
+		userEmail.focus();
 	}else{
 		alert("Thank You");
 		if( genderMale ){
@@ -109,5 +111,51 @@ function onSubmit(){
 		}
 		return true;
 	}
+
+	if( userFirstName.value === "" ){
+		errorString += "<p><sup>*</sup>Please enter a First Name</p>";
+	}
+	if( userFirstName.value.indexOf(' ')>=0 ){
+		errorString += "<p><sup>*</sup>First name has whitespace</p>";
+	}
+	if( userLastName.value === "" ){
+		errorString += "<p><sup>*</sup>Please enter a Last Name</p>";
+	}
+	if( userLastName.value.indexOf(' ')>=0 ){
+		errorString += "<p><sup>*</sup>Last name has whitespace</p>";
+	}
+	if( genderMale===false && genderFemale===false ){
+		errorString += "<p><sup>*</sup>Please select a gender</p>";
+	}
+	if( hobbies.length === 0 ){
+		errorString += "<p><sup>*</sup>Please select at least one hobby</p>";
+	}
+	if( skills === ""  ){
+		errorString += "<p><sup>*</sup>Please select a skill</p>";
+	}
+	if( maritialStatusMarried === true && nameOfSpouse.value==="" ){
+		errorString += "<p><sup>*</sup>Please enter a Spouse name</p>";
+	}
+	if( maritialStatusMarried === true && nameOfSpouse.value.indexOf(' ')>=0 ){
+		errorString += "<p><sup>*</sup>Spouse name has whitespace</p>";
+	}
+	if( ( dateOfBirthMessage !== "" ) ){
+		errorString += "<p><sup>*</sup>" + dateOfBirthMessage + "</p>";
+		// alert( dateOfBirthMessage );
+	}
+	if( ( userEmailMessage !== "" ) ){
+		errorString += "<p><sup>*</sup>" + userEmailMessage + "</p>";
+		// alert( userEmailMessage );
+	}
+	if( errorString === "" ){
+		alert("Thank You");
+		if( genderMale ){
+			addData( userFirstName.value, userLastName.value, "Male", otherDetails );
+		}else{
+			addData( userFirstName.value, userLastName.value, "Female", otherDetails );
+		}
+		return true;
+	}
+	errorSection.innerHTML+=errorString;
 	return false;
 }

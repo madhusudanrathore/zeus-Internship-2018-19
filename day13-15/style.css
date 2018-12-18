@@ -33,3 +33,6 @@ textarea{
 	background-color: #C4BD97;
 	color: #000000;
 }
+#error-messages{
+	color: red;
+}

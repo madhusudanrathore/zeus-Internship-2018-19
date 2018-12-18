@@ -1,0 +1,13 @@
+#content{
+    display: none;
+} 
+#mydiv{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    cursor: move;
+    position: absolute;
+}
+#criteria-first , #criteria-second , #criteria-third , #criteria-fourth , #criteria-fifth{
+    color: red;
+}
