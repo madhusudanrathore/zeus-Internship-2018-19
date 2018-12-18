@@ -1,0 +1,40 @@
+#container{
+    background-color: #9E9E9E;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+}
+#user-id{
+    /* float: left; */
+    width: 100px;
+    background-color: red;
+}
+#control-section{
+    /* float: center; */
+}
+#control-section button{
+    padding: 10px 40px;
+    background-color: #57E4AE;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+#runner-track{
+    /* float: right; */
+    /* clear: right; */
+    /* position: absolute; */
+    margin: 10px;
+    width: 1000px;
+    height: 100px;
+    background-color: #48A4CC;
+    border-bottom: 20px solid gold;
+}
+#runner-progress{
+    margin-top: 90px;
+    /* margin-right: 5px; */
+    /* margin-left: 5px; */
+}
+/* #DDDDDD */
+table td {
+    border: 1px solid black;
+}

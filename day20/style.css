@@ -1,0 +1,19 @@
+#container{
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+}
+#runner-track{
+    margin: 10px;
+    width: 1010px;
+    height: 100px;
+    background-color: #ffffff;
+}
+#runner-progress{
+    margin-top: 80px;
+}
+/* #DDDDDD */
+table td {
+    border: 1px solid black;
+}
