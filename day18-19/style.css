@@ -3,38 +3,63 @@
     color: #ffffff;
     font-weight: bold;
     padding: 10px;
+    height: 60px;
+    width: 1200px;
 }
 #user-id{
-    /* float: left; */
-    width: 100px;
-    background-color: red;
+    float: left;
+    border: 3px solid #000000;
+    margin: -10px;
+    background-color: #ffffff;
 }
 #control-section{
-    /* float: center; */
+    float: left;
+    text-align: center;
+    margin: -20px 0px 0px 35px;
 }
 #control-section button{
-    padding: 10px 40px;
+    padding: 5px;
+    width: 150%;
     background-color: #57E4AE;
     color: #000000;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    margin-top: -10px;
 }
 #runner-track{
-    /* float: right; */
-    /* clear: right; */
-    /* position: absolute; */
-    margin: 10px;
-    width: 1000px;
-    height: 100px;
+    margin-left: 190px;
+    width: 1010px;
+    height: 40px;
     background-color: #48A4CC;
-    border-bottom: 20px solid gold;
+    border-bottom: 10px solid gold;
 }
 #runner-progress{
-    margin-top: 90px;
-    /* margin-right: 5px; */
-    /* margin-left: 5px; */
+    margin-top: 40px;
 }
-/* #DDDDDD */
-table td {
-    border: 1px solid black;
+#information-table{
+    margin: 10px 0px 0px 100px;
+    clear: both;
+}
+table tr:not(:first-child){
+    background-color: #DDDDDD;
+    border-collapse: collapse;
+    text-align: center;
+}
+table tr{
+    border-bottom: 1px solid black;
+}
+table td:not(:last-child){
+    border-right: 1px solid black;
+}
+.demo{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.demo-container{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
 }
