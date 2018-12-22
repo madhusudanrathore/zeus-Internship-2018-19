@@ -1,0 +1,75 @@
+#d8 {
+    width: 500px;
+    height: 500px;
+    /* background-color: rgb(102, 51, 0); */
+}
+
+#d1 {
+    width: 30%;
+    height: 25%;
+    background-color: rgb(238, 230, 222);
+    float: left;
+    box-sizing: border-box;
+    border: 5px solid rgb(102, 51, 0);
+}
+
+#d2 {
+    width: 70%;
+    height: 65%;
+    background-color: rgba(226, 21, 21, 0.774);
+    float: right;
+    display: inline;
+    box-sizing: border-box;
+    border: 5px solid rgb(102, 51, 0);
+}
+
+#d3 {
+    width: 30%;
+    height: 40%;
+    float: left;
+    background-color: rgb(238, 230, 222);
+    box-sizing: border-box;
+    border-right: 5px solid rgb(102, 51, 0);
+    border-left: 5px solid rgb(102, 51, 0);
+    border-bottom: 5px solid rgb(102, 51, 0);
+    border-top: 10px solid rgb(102, 51, 0);
+}
+
+#d4 {
+    width: 30%;
+    height: 35%;
+    float: left;
+    background-color: rgb(14, 113, 194);
+    box-sizing: border-box;
+    border: 5px solid rgb(102, 51, 0);
+}
+
+#d5 {
+    width: 55%;
+    height: 35%;
+    float: left;
+    background-color: rgb(238, 230, 222);
+    box-sizing: border-box;
+    border: 5px solid rgb(102, 51, 0);
+}
+
+#d6 {
+    width: 15%;
+    height: 17.5%;
+    float: left;
+    background-color: rgb(238, 230, 222);
+    box-sizing: border-box;
+    border: 5px solid rgb(102, 51, 0);
+}
+
+#d7 {
+    width: 15%;
+    height: 17.5%;
+    float: left;
+    background-color: rgba(240, 198, 13, 0.973);
+    box-sizing: border-box;
+    border-right: 5px solid rgb(102, 51, 0);
+    border-left: 5px solid rgb(102, 51, 0);
+    border-bottom: 5px solid rgb(102, 51, 0);
+    border-top: 10px solid rgb(102, 51, 0);
+}

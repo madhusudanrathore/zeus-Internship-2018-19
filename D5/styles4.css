@@ -1,0 +1,20 @@
+.parentdiv{
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    background-color: red;
+}
+.childdiv{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    float: left;
+}
+.childdiv1{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    float: right;
+}
