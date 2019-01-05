@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hide on Scroll Navbar</title>
+	<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="hide_on_scroll.css">
+
+</head>
+<body>
+
+	<div id="header-wrap">
+	    <div id="header" class="clear">
+	        <nav><h1>Prototype</h1>another line<br/>another line
+	        </nav>
+	    </div>
+	</div>
+
+	<script>
+		var previousScroll = 0, headerOrgOffset = $('#header').height();
+
+		$('#header-wrap').height($('#header').height());
+
+		$(window).scroll(function () {
+		    var currentScroll = $(this).scrollTop();
+		    if (currentScroll > headerOrgOffset) {
+		        if (currentScroll > previousScroll) {
+		            $('#header-wrap').slideUp();
+		        } else {
+		            $('#header-wrap').slideDown();
+		        }
+		    } 
+		    previousScroll = currentScroll;
+		});
+	</script>
+
+</body>
+</html>

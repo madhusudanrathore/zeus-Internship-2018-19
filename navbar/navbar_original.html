@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar Original</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="original.css">
+
+</head>
+<body>
+    
+    <nav id="custom-navbar" class="navbar navbar-default">
+
+        <div class="container-fluid">
+            
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="https://finception.in/static/images/nav_logo.svg" alt="logo" style="width:180px;" />
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">          
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="navbar-link"><a href="#/Activity">News</a></li>
+                    <li class="navbar-link active"><a href="#/Customers">Contact</a></li>
+                    <li class="navbar-link"><a href="#/Inventory">About</a></li>
+                </ul>
+            </div>
+
+            <form class="navbar-form navbar-search" id="navbar-search-normal">
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <i class="form-control-feedback glyphicon glyphicon-search"></i>
+                </div>
+            </form>
+
+        </div>
+
+    </nav>
+
+    <div>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+        <p>asdasd</p>
+    </div>
+
+    <script>
+        $('.navbar-link').click(function(){
+            $(".navbar-link").removeClass("active");
+            $(this).addClass("active");
+        });
+
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("custom-navbar").style.top = "0";
+          } else {
+            document.getElementById("custom-navbar").style.top = "-110px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+
+</body>
+</html>
